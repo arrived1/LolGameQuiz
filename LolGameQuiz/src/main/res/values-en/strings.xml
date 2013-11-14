@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Dota2 Game Quiz</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="hero_quiz">Hero quiz</string>
-    <string name="skill_quiz">Skill quiz</string>
-
     <string name="points">Points: </string>
     <string name="guesses_left">Guesses left: </string>
     <string name="time">Time: </string>
@@ -26,5 +20,7 @@
     <string name="gameModeExplanation2">Hardcore mode, you have only 1 chance, each hero is randomed only once!</string>
     <string name="gameModeExplanation3">You have 3 chances, game never end!</string>
     <string name="gameModeExplanation4">Hardcore mode, you have only 1 chance, game never ends!</string>
+
+
 
 </resources>
