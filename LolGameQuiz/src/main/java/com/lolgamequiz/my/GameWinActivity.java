@@ -21,7 +21,7 @@ public class GameWinActivity extends Activity {
         String timeTxt = extras.getString("TIME");
 
         ImageView gameOverImage = (ImageView)findViewById(R.id.logo);
-        gameOverImage.setImageResource(R.drawable.dota);
+        gameOverImage.setImageResource(R.drawable.logo);
 
         TextView score = (TextView)findViewById(R.id.scoreRes);
         score.setText(Integer.toString(points));
