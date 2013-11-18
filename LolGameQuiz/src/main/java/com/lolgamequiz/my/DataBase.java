@@ -64,29 +64,29 @@ public class DataBase {
                 R.drawable.MoltenShield,
                 R.drawable.InfernalGuardian));
 
-        heroes.add(new Hero("",
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.));
+        heroes.add(new Hero("Ashe",
+                R.drawable.Ashe,
+                R.drawable.Bowmaster_Bullseye,
+                R.drawable.FrostShot,
+                R.drawable.Volley,
+                R.drawable.AsheSpiritOfTheHawk,
+                R.drawable.EnchantedCrystalArrow));
 
-        heroes.add(new Hero("",
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.));
+        heroes.add(new Hero("Blitzcrank",
+                R.drawable.Blitzcrank,
+                R.drawable.Blitzcrank_ManaBarrier,
+                R.drawable.RocketGrab,
+                R.drawable.Overdrive,
+                R.drawable.PowerFist,
+                R.drawable.StaticField));
 
-        heroes.add(new Hero("",
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.));
+        heroes.add(new Hero("Brand",
+                R.drawable.Brand,
+                R.drawable.BrandBlaze,
+                R.drawable.BrandBlaze2,
+                R.drawable.BrandFissure,
+                R.drawable.BrandConflagration,
+                R.drawable.BrandWildfire));
 
 
 
