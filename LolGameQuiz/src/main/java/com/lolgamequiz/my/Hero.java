@@ -1,56 +1,45 @@
 package com.lolgamequiz.my;
 
+import java.util.Vector;
+
 public class Hero {
     private String name;
     private int pic;
-    private int smallPic;
-    private int skill1;
-    private int skill2;
-    private int skill3;
-    private int ulti;
+    private Vector<Integer> skills;
 
-    Hero(String name, int pic, int smallPic, int skill1, int skill2, int skill3, int ulti) {
+    Hero(String name, int pic, int skill1, int skill2, int skill3, int skill4, int ulti) {
         this.name = name;
         this.pic = pic;
-        this.smallPic = smallPic;
-        this.skill1 = skill1;
-        this.skill2 = skill2;
-        this.skill3 = skill3;
-        this.ulti = ulti;
+        skills = new Vector<Integer>();
+        skills.add(skill1);
+        skills.add(skill2);
+        skills.add(skill3);
+        skills.add(skill4);
+        skills.add(ulti);
     }
 
     public int getPic() {
         return pic;
     }
 
-    public int getSmallPic() {
-        return smallPic;
-    }
-
-
     public int getSkill(int i) {
         switch(i) {
             case 1:
-                return skill1;
+                return skills.get(0);
             case 2:
-                return skill2;
+                return skills.get(1);
             case 3:
-                return skill3;
+                return skills.get(2);
+            case 4:
+                return skills.get(3);
             case 0:
-                return ulti;
+                return skills.get(4); //ulti
         }
         return -1;
     }
 
-    public int getUlti() {
-        return ulti;
-    }
-
-    public boolean isSkillMy(int skill)
-    {
-        if((skill == skill1) || (skill == skill2) || (skill == skill3) || (skill == ulti))
-            return true;
-        return false;
+    public int getSkillAmount() {
+        return skills.size();
     }
 
     public String getName() {

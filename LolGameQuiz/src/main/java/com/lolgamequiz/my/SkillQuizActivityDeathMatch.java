@@ -60,7 +60,7 @@ public class SkillQuizActivityDeathMatch extends Activity {
                 continue;
 
             int heroRand = randHeroForAnswers();
-            int skillRand = rand.nextInt(3);
+            int skillRand = rand.nextInt(base.getSkillAmount());
             int resource = base.getHero(heroRand).getSkill(skillRand);
             answers.get(i).setImageResource(resource);
         }
@@ -76,7 +76,7 @@ public class SkillQuizActivityDeathMatch extends Activity {
 
     private void  prepareCorrectAnswer() {
         correctAnswer = rand.nextInt(answers.size());
-        int correctSkill = rand.nextInt(3);
+        int correctSkill = rand.nextInt(base.getSkillAmount());
         int correctResource = newHero.getSkill(correctSkill);
         answers.get(correctAnswer).setImageResource(correctResource);
     }
