@@ -9,84 +9,84 @@ public class DataBase {
         heroes = new Vector<Hero>();
 
         heroes.add(new Hero("Aatrox",
-                R.drawable.Aatrox,
-                R.drawable.Aatrox_Passive,
-                R.drawable.AatroxQ,
-                R.drawable.AatroxW,
-                R.drawable.AatroxE,
-                R.drawable.AatroxR));
+                R.drawable.aatrox,
+                R.drawable.aatrox_passive,
+                R.drawable.aatroxq,
+                R.drawable.aatroxw,
+                R.drawable.aatroxe,
+                R.drawable.aatroxr));
 
         heroes.add(new Hero("Ahri",
-                R.drawable.Ahri,
-                R.drawable.Ahri_SoulEater,
-                R.drawable.AhriOrbofDeception,
-                R.drawable.AhriFoxFire,
-                R.drawable.AhriSeduce,
-                R.drawable.AhriTumble));
+                R.drawable.ahri,
+                R.drawable.ahri_souleater,
+                R.drawable.ahriorbofdeception,
+                R.drawable.ahrifoxfire,
+                R.drawable.ahriseduce,
+                R.drawable.ahritumble));
 
         heroes.add(new Hero("Akali",
-                R.drawable.Akali,
-                R.drawable.AkaliTwinDisciplines,
-                R.drawable.AkaliMota,
-                R.drawable.AkaliSmokeBomb,
-                R.drawable.AkaliShadowSwipe,
-                R.drawable.AkaliShadowDance));
+                R.drawable.akali,
+                R.drawable.akalitwindisciplines,
+                R.drawable.akalimota,
+                R.drawable.akalismokebomb,
+                R.drawable.akalishadowswipe,
+                R.drawable.akalishadowdance));
 
         heroes.add(new Hero("Alistar",
-                R.drawable.Alistar,
-                R.drawable.Minotaur_ColossalStrength,
-                R.drawable.Pulverize,
-                R.drawable.Headbutt,
-                R.drawable.TriumphantRoar,
-                R.drawable.FerociousHowl));
+                R.drawable.alistar,
+                R.drawable.minotaur_colossalstrength,
+                R.drawable.pulverize,
+                R.drawable.headbutt,
+                R.drawable.triumphantroar,
+                R.drawable.ferocioushowl));
 
         heroes.add(new Hero("Amumu",
-                R.drawable.Amumu,
-                R.drawable.SadMummy_CorpseExplosion,
-                R.drawable.BandageToss,
-                R.drawable.AuraofDespair,
-                R.drawable.Tantrum,
-                R.drawable.CurseoftheSadMummy));
+                R.drawable.amumu,
+                R.drawable.sadmummy_corpseexplosion,
+                R.drawable.bandagetoss,
+                R.drawable.auraofdespair,
+                R.drawable.tantrum,
+                R.drawable.curseofthesadmummy));
 
         heroes.add(new Hero("Anivia",
-                R.drawable.Anivia,
-                R.drawable.Cryophoenix_Rebirth,
-                R.drawable.FlashFrost,
-                R.drawable.Crystallize,
-                R.drawable.Frostbite,
-                R.drawable.GlacialStorm));
+                R.drawable.anivia,
+                R.drawable.cryophoenix_rebirth,
+                R.drawable.flashfrost,
+                R.drawable.crystallize,
+                R.drawable.frostbite,
+                R.drawable.glacialstorm));
 
         heroes.add(new Hero("Annie",
-                R.drawable.Annie,
-                R.drawable.Annie_Passive,
-                R.drawable.Disintegrate,
-                R.drawable.Incinerate,
-                R.drawable.MoltenShield,
-                R.drawable.InfernalGuardian));
+                R.drawable.annie,
+                R.drawable.annie_passive,
+                R.drawable.disintegrate,
+                R.drawable.incinerate,
+                R.drawable.moltenshield,
+                R.drawable.infernalguardian));
 
         heroes.add(new Hero("Ashe",
-                R.drawable.Ashe,
-                R.drawable.Bowmaster_Bullseye,
-                R.drawable.FrostShot,
-                R.drawable.Volley,
-                R.drawable.AsheSpiritOfTheHawk,
-                R.drawable.EnchantedCrystalArrow));
+                R.drawable.ashe,
+                R.drawable.bowmaster_bullseye,
+                R.drawable.frostshot,
+                R.drawable.volley,
+                R.drawable.ashespiritofthehawk,
+                R.drawable.enchantedcrystalarrow));
 
         heroes.add(new Hero("Blitzcrank",
-                R.drawable.Blitzcrank,
-                R.drawable.Blitzcrank_ManaBarrier,
-                R.drawable.RocketGrab,
-                R.drawable.Overdrive,
-                R.drawable.PowerFist,
-                R.drawable.StaticField));
+                R.drawable.blitzcrank,
+                R.drawable.blitzcrank_manabarrier,
+                R.drawable.rocketgrab,
+                R.drawable.overdrive,
+                R.drawable.powerfist,
+                R.drawable.staticfield));
 
         heroes.add(new Hero("Brand",
-                R.drawable.Brand,
-                R.drawable.BrandBlaze,
-                R.drawable.BrandBlaze2,
-                R.drawable.BrandFissure,
-                R.drawable.BrandConflagration,
-                R.drawable.BrandWildfire));
+                R.drawable.brand,
+                R.drawable.brandblaze,
+                R.drawable.brandblaze2,
+                R.drawable.brandfissure,
+                R.drawable.brandconflagration,
+                R.drawable.brandwildfire));
 
 
 
