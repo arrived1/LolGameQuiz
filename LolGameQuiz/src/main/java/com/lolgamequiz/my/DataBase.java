@@ -88,7 +88,101 @@ public class DataBase {
                 R.drawable.brandconflagration,
                 R.drawable.brandwildfire));
 
+        heroes.add(new Hero("Caitlyn",
+                R.drawable.caitlyn,
+                R.drawable.caitlyn_headshot,
+                R.drawable.caitlynpiltoverpeacemaker,
+                R.drawable.caitlynyordletrap,
+                R.drawable.caitlynentrapment,
+                R.drawable.caitlynaceinthehole));
 
+        heroes.add(new Hero("Cassiopeia",
+                R.drawable.cassiopeia,
+                R.drawable.cassiopeia_deadlycadence,
+                R.drawable.cassiopeianoxiousblast,
+                R.drawable.cassiopeiamiasma,
+                R.drawable.cassiopeiatwinfang,
+                R.drawable.cassiopeiapetrifyinggazespell));
+
+        heroes.add(new Hero("Cho'Gath",
+                R.drawable.chogath,
+                R.drawable.greenterror_tailspike,
+                R.drawable.rupture,
+                R.drawable.feralscream,
+                R.drawable.vorpalspikes,
+                R.drawable.feast));
+
+        heroes.add(new Hero("Corki",
+                R.drawable.corki,
+                R.drawable.corki_rapidreload,
+                R.drawable.phosphorusbomb,
+                R.drawable.carpetbomb,
+                R.drawable.ggun,
+                R.drawable.missilebarrage));
+
+        heroes.add(new Hero("Darius",
+                R.drawable.darius,
+                R.drawable.darius_icon_hemorrhage,
+                R.drawable.dariuscleave,
+                R.drawable.dariusnoxiantacticsonh,
+                R.drawable.dariusaxegrabcone,
+                R.drawable.dariusexecute));
+
+        heroes.add(new Hero("Diana",
+                R.drawable.diana,
+                R.drawable.diana_passive_lunarblade,
+                R.drawable.dianaarc,
+                R.drawable.dianaorbs,
+                R.drawable.dianavortex,
+                R.drawable.dianateleport));
+
+        heroes.add(new Hero("Dr. Mudo",
+                R.drawable.drmundo,
+                R.drawable.drmundo_adrenalinerush2,
+                R.drawable.infectedcleavermissilecast,
+                R.drawable.burningagony,
+                R.drawable.masochism,
+                R.drawable.sadism));
+
+        heroes.add(new Hero("Draven",
+                R.drawable.draven,
+                R.drawable.draven_passive,
+                R.drawable.dravenspinning,
+                R.drawable.dravenfury,
+                R.drawable.dravendoubleshot,
+                R.drawable.dravenrcast));
+
+        heroes.add(new Hero("Elise",
+                R.drawable.elise,
+                R.drawable.elisepassive,
+                R.drawable.elisehumanq,
+                R.drawable.elisehumanw,
+                R.drawable.elisehumane,
+                R.drawable.eliser));
+
+        heroes.add(new Hero("Evelynn",
+                R.drawable.evelynn,
+                R.drawable.evelynn_shadowwalk,
+                R.drawable.evelynnq,
+                R.drawable.evelynnw,
+                R.drawable.evelynne,
+                R.drawable.evelynnr));
+
+        heroes.add(new Hero("Ezreal",
+                R.drawable.ezreal,
+                R.drawable.ezreal_risingspellforce,
+                R.drawable.ezrealmysticshot,
+                R.drawable.ezrealessenceflux,
+                R.drawable.ezrealarcaneshift,
+                R.drawable.ezrealtrueshotbarrage));
+
+        heroes.add(new Hero("",
+                R.drawable.,
+                R.drawable.,
+                R.drawable.,
+                R.drawable.,
+                R.drawable.,
+                R.drawable.));
 
 
 
