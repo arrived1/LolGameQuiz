@@ -176,13 +176,117 @@ public class DataBase {
                 R.drawable.ezrealarcaneshift,
                 R.drawable.ezrealtrueshotbarrage));
 
-        heroes.add(new Hero("",
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.,
-                R.drawable.));
+        heroes.add(new Hero("Fiddlesticks",
+                R.drawable.fiddlesticks,
+                R.drawable.fiddlesticks_paranoia,
+                R.drawable.terrify,
+                R.drawable.drain,
+                R.drawable.fiddlesticksdarkwind,
+                R.drawable.crowstorm));
+
+        heroes.add(new Hero("Fiora",
+                R.drawable.fiora,
+                R.drawable.fiora_duelist,
+                R.drawable.fioraq,
+                R.drawable.fiorariposte,
+                R.drawable.fioraflurry,
+                R.drawable.fioradance));
+
+        heroes.add(new Hero("Fizz",
+                R.drawable.fizz,
+                R.drawable.fizzpassive,
+                R.drawable.fizzpiercingstrike,
+                R.drawable.fizzseastonepassive,
+                R.drawable.fizzjump,
+                R.drawable.fizzmarinerdoom));
+
+        heroes.add(new Hero("Galio",
+                R.drawable.galio,
+                R.drawable.galio_runicskin,
+                R.drawable.galioresolutesmite,
+                R.drawable.galiobulwark,
+                R.drawable.galiorighteousgust,
+                R.drawable.galioidolofdurand));
+
+        heroes.add(new Hero("Gangplank",
+                R.drawable.gangplank,
+                R.drawable.pirate_grogsoakedblade,
+                R.drawable.parley,
+                R.drawable.removescurvy,
+                R.drawable.raisemorale,
+                R.drawable.cannonbarrage));
+
+        heroes.add(new Hero("Garen",
+                R.drawable.garen,
+                R.drawable.garen_passive,
+                R.drawable.garenq,
+                R.drawable.garenw,
+                R.drawable.garene,
+                R.drawable.garenr));
+
+        heroes.add(new Hero("Gragas",
+                R.drawable.gragas,
+                R.drawable.gragaspassiveheal,
+                R.drawable.gragasbarrelroll,
+                R.drawable.gragasdrunkenrage,
+                R.drawable.gragasbodyslam,
+                R.drawable.gragasexplosivecask));
+
+        heroes.add(new Hero("Graves",
+                R.drawable.graves,
+                R.drawable.gravestruegrit,
+                R.drawable.gravesclustershot,
+                R.drawable.gravessmokegrenade,
+                R.drawable.gravesmove,
+                R.drawable.graveschargeshot));
+
+        heroes.add(new Hero("Hecarim",
+                R.drawable.hecarim,
+                R.drawable.hecarim_passive,
+                R.drawable.hecarimrapidslash,
+                R.drawable.hecarimw,
+                R.drawable.hecarimramp,
+                R.drawable.hecarimult));
+
+        heroes.add(new Hero("Heimerdinger",
+                R.drawable.heimerdinger,
+                R.drawable.heimerdinger_techmaturgicalrepairbots,
+                R.drawable.heimerdingerq,
+                R.drawable.heimerdingerw,
+                R.drawable.heimerdingere,
+                R.drawable.heimerdingerr);
+
+        heroes.add(new Hero("Irelia",
+                R.drawable.irelia,
+                R.drawable.irelia_ionianfervor,
+                R.drawable.ireliagatotsu,
+                R.drawable.ireliahitenstyle,
+                R.drawable.ireliaequilibriumstrike,
+                R.drawable.ireliatranscendentblades));
+
+        heroes.add(new Hero("Janna",
+                R.drawable.janna,
+                R.drawable.janna_tailwind,
+                R.drawable.howlinggale,
+                R.drawable.sowthewind,
+                R.drawable.eyeofthestorm,
+                R.drawable.reapthewhirlwind));
+
+        heroes.add(new Hero("Jarvan IV",
+                R.drawable.jarvaniv,
+                R.drawable.jarvaniv_martialcadence,
+                R.drawable.jarvanivdragonstrike,
+                R.drawable.jarvanivgoldenaegis,
+                R.drawable.jarvanivdemacianstandard,
+                R.drawable.jarvanivcataclysm));
+
+        heroes.add(new Hero("Jax",
+                R.drawable.jax,
+                R.drawable.armsmaster_masterofarms,
+                R.drawable.jaxleapstrike,
+                R.drawable.jaxempowertwo,
+                R.drawable.jaxcounterstrike,
+                R.drawable.jaxrelentlessassault));
 
 
 
