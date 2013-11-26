@@ -254,7 +254,7 @@ public class DataBase {
                 R.drawable.heimerdingerq,
                 R.drawable.heimerdingerw,
                 R.drawable.heimerdingere,
-                R.drawable.heimerdingerr);
+                R.drawable.heimerdingerr));
 
         heroes.add(new Hero("Irelia",
                 R.drawable.irelia,
@@ -287,6 +287,174 @@ public class DataBase {
                 R.drawable.jaxempowertwo,
                 R.drawable.jaxcounterstrike,
                 R.drawable.jaxrelentlessassault));
+
+        heroes.add(new Hero("Jayce",
+                R.drawable.jayce,
+                R.drawable.jayce_passive,
+                R.drawable.jaycetotheskies,
+                R.drawable.jaycestaticfield,
+                R.drawable.jaycethunderingblow,
+                R.drawable.jaycestancehtg));
+
+        heroes.add(new Hero("Jinx",
+                R.drawable.jinx,
+                R.drawable.jinx_passive,
+                R.drawable.jinxq,
+                R.drawable.jinxw,
+                R.drawable.jinxe,
+                R.drawable.jinxrwrapper));
+
+        heroes.add(new Hero("Karma",
+                R.drawable.karma,
+                R.drawable.karma_passive,
+                R.drawable.karmaq,
+                R.drawable.karmaspiritbind,
+                R.drawable.karmasolkimshield,
+                R.drawable.karmamantra));
+
+        heroes.add(new Hero("Karthus",
+                R.drawable.karthus,
+                R.drawable.lich_defied,
+                R.drawable.laywaste,
+                R.drawable.wallofpain,
+                R.drawable.defile
+                R.drawable.fallenone));
+
+        heroes.add(new Hero("Kassadin",
+                R.drawable.kassadin,
+                R.drawable.voidwalker_netherburn,
+                R.drawable.nulllance,
+                R.drawable.netherblade,
+                R.drawable.forcepulse,
+                R.drawable.riftwalk));
+
+        heroes.add(new Hero("Katarina",
+                R.drawable.katarina,
+                R.drawable.katarina_voracity,
+                R.drawable.katarinaq,
+                R.drawable.katarinaw,
+                R.drawable.katarinae,
+                R.drawable.katarinar));
+
+        heroes.add(new Hero("Kayle",
+                R.drawable.kayle,
+                R.drawable.judicator_divineblessing,
+                R.drawable.judicatorreckoning,
+                R.drawable.judicatordivineblessing,
+                R.drawable.judicatorrighteousfury,
+                R.drawable.judicatorintervention));
+
+        heroes.add(new Hero("Kennen",
+                R.drawable.kennen,
+                R.drawable.kennen_markofstorm,
+                R.drawable.kennenshurikenhurlmissile1,
+                R.drawable.kennenbringthelight,
+                R.drawable.kennenlightningrush,
+                R.drawable.kennenshurikenstorm));
+
+        heroes.add(new Hero("Kha'Zix",
+                R.drawable.khazix,
+                R.drawable.khazix_p,
+                R.drawable.khazixq,
+                R.drawable.khazixw,
+                R.drawable.khazixe,
+                R.drawable.khazixr));
+
+        heroes.add(new Hero("Kog'Maw",
+                R.drawable.kogmaw,
+                R.drawable.kogmaw_icathiansurprise,
+                R.drawable.kogmawcausticspittle,
+                R.drawable.kogmawbioarcanebarrage,
+                R.drawable.kogmawvoidooze,
+                R.drawable.kogmawlivingartillery));
+
+        heroes.add(new Hero("LeBlanc",
+                R.drawable.leblanc,
+                R.drawable.leblancmirrorimage,
+                R.drawable.leblancchaosorb,
+                R.drawable.leblancslide,
+                R.drawable.leblancsoulshackle,
+                R.drawable.leblancmimic));
+
+        heroes.add(new Hero("Lee Sin",
+                R.drawable.leesin,
+                R.drawable.fioraflurry,
+                R.drawable.blindmonkqone,
+                R.drawable.blindmonkwone,
+                R.drawable.blindmonkeone,
+                R.drawable.blindmonkrkick));
+
+        heroes.add(new Hero("Leona",
+                R.drawable.leona,
+                R.drawable.leonasunlight,
+                R.drawable.leonashieldofdaybreak,
+                R.drawable.leonasolarbarrier,
+                R.drawable.leonazenithblade,
+                R.drawable.leonasolarflare));
+
+        heroes.add(new Hero("Lissandra",
+                R.drawable.lissandra,
+                R.drawable.lissandra_passive,
+                R.drawable.lissandraq,
+                R.drawable.lissandraw,
+                R.drawable.lissandrae,
+                R.drawable.lissandrar));
+
+        heroes.add(new Hero("Lucian",
+                R.drawable.lucian,
+                R.drawable.lucian_passive,
+                R.drawable.lucianq,
+                R.drawable.lucianw,
+                R.drawable.luciane,
+                R.drawable.lucianr));
+
+        heroes.add(new Hero("Lulu",
+                R.drawable.lulu,
+                R.drawable.lulu_pixfaeriecompanion,
+                R.drawable.luluq,
+                R.drawable.luluw,
+                R.drawable.lulue,
+                R.drawable.lulur));
+
+        heroes.add(new Hero("Lux",
+                R.drawable.lux,
+                R.drawable.luxilluminatingfraulein,
+                R.drawable.luxlightbinding,
+                R.drawable.luxprismaticwave,
+                R.drawable.luxlightstrikekugel,
+                R.drawable.luxmalicecannon));
+
+        heroes.add(new Hero("Malphite",
+                R.drawable.malphite,
+                R.drawable.malphite_graniteshield,
+                R.drawable.seismicshard,
+                R.drawable.obduracy,
+                R.drawable.landslide,
+                R.drawable.ufslash));
+
+        heroes.add(new Hero("Malzahar",
+                R.drawable.malzahar,
+                R.drawable.alzahar_summonvoidling,
+                R.drawable.alzaharcallofthevoid,
+                R.drawable.alzaharnullzone,
+                R.drawable.alzaharmaleficvisions,
+                R.drawable.alzaharnethergrasp));
+
+        heroes.add(new Hero("Maokai",
+                R.drawable.maokai,
+                R.drawable.maokai_sapmagic,
+                R.drawable.maokaitrunkline,
+                R.drawable.maokaiunstablegrowth,
+                R.drawable.maokaisapling2,
+                R.drawable.maokaidrain3));
+
+        heroes.add(new Hero("Master Yi",
+                R.drawable.masteryi,
+                R.drawable.masteryi_passive1,
+                R.drawable.alphastrike,
+                R.drawable.meditate,
+                R.drawable.wujustyle,
+                R.drawable.highlander));
 
 
 
