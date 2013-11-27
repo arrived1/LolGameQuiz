@@ -317,7 +317,7 @@ public class DataBase {
                 R.drawable.lich_defied,
                 R.drawable.laywaste,
                 R.drawable.wallofpain,
-                R.drawable.defile
+                R.drawable.defile,
                 R.drawable.fallenone));
 
         heroes.add(new Hero("Kassadin",
@@ -360,7 +360,7 @@ public class DataBase {
                 R.drawable.khazixe,
                 R.drawable.khazixr));
 
-        heroes.add(new Hero("Kog'Maw",
+        heroes.add(new Hero("\Kog'Maw",
                 R.drawable.kogmaw,
                 R.drawable.kogmaw_icathiansurprise,
                 R.drawable.kogmawcausticspittle,
@@ -456,6 +456,173 @@ public class DataBase {
                 R.drawable.wujustyle,
                 R.drawable.highlander));
 
+        heroes.add(new Hero("Miss Fortune",
+                R.drawable.missfortune,
+                R.drawable.missfortune_strut,
+                R.drawable.missfortunericochetshot,
+                R.drawable.missfortuneviciousstrikes,
+                R.drawable.missfortunescattershot,
+                R.drawable.missfortunebullettime));
+
+        heroes.add(new Hero("Mordekaiser",
+                R.drawable.mordekaiser,
+                R.drawable.mordekaiser_ironman,
+                R.drawable.mordekaisermaceofspades,
+                R.drawable.mordekaisercreepingdeathcast,
+                R.drawable.mordekaisersyphonofdestruction,
+                R.drawable.mordekaiserchildrenofthegrave));
+
+        heroes.add(new Hero("Morgana",
+                R.drawable.morgana,
+                R.drawable.fallenangel_empathize,
+                R.drawable.darkbindingmissile,
+                R.drawable.tormentedsoil,
+                R.drawable.blackshield,
+                R.drawable.soulshackles));
+
+        heroes.add(new Hero("Nami",
+                R.drawable.nami,
+                R.drawable.namipassive,
+                R.drawable.namiq,
+                R.drawable.namiw,
+                R.drawable.namie,
+                R.drawable.namir));
+
+        heroes.add(new Hero("Nasus",
+                R.drawable.nasus,
+                R.drawable.nasus_passive,
+                R.drawable.nasusq,
+                R.drawable.nasusw,
+                R.drawable.nasuse,
+                R.drawable.nasusr));
+
+        heroes.add(new Hero("Nautilus",
+                R.drawable.nautilus,
+                R.drawable.nautilus_staggeringblow,
+                R.drawable.nautilusanchordrag,
+                R.drawable.nautiluspiercinggaze,
+                R.drawable.nautilussplashzone,
+                R.drawable.nautilusgrandline));
+
+        heroes.add(new Hero("Nidalee",
+                R.drawable.nidalee,
+                R.drawable.nidalee_ontheprowl,
+                R.drawable.javelintoss,
+                R.drawable.bushwhack,
+                R.drawable.primalsurge,
+                R.drawable.aspectofthecougar));
+
+        heroes.add(new Hero("Nocturne",
+                R.drawable.nocturne,
+                R.drawable.nocturne_umbrablades,
+                R.drawable.nocturneduskbringer,
+                R.drawable.nocturneshroudofdarkness,
+                R.drawable.nocturneunspeakablehorror,
+                R.drawable.nocturneparanoia));
+
+        heroes.add(new Hero("Nunu",
+                R.drawable.nunu,
+                R.drawable.yeti_frostnova,
+                R.drawable.consume,
+                R.drawable.bloodboil,
+                R.drawable.iceblast,
+                R.drawable.absolutezero));
+
+        heroes.add(new Hero("Olaf",
+                R.drawable.olaf,
+                R.drawable.olaf_passive,
+                R.drawable.olafaxethrowcast,
+                R.drawable.olaffrenziedstrikes,
+                R.drawable.olafrecklessstrike,
+                R.drawable.olafragnarok));
+
+        heroes.add(new Hero("Orianna",
+                R.drawable.orianna,
+                R.drawable.oriannapassive,
+                R.drawable.orianaizunacommand,
+                R.drawable.orianadissonancecommand,
+                R.drawable.orianaredactcommand,
+                R.drawable.orianadetonatecommand));
+
+        heroes.add(new Hero("Pantheon",
+                R.drawable.pantheon,
+                R.drawable.pantheon_aoz,
+                R.drawable.pantheon_throw,
+                R.drawable.pantheon_leapbash,
+                R.drawable.pantheon_heartseeker,
+                R.drawable.pantheon_grandskyfall_jump));
+
+        heroes.add(new Hero("Poppy",
+                R.drawable.poppy,
+                R.drawable.poppy_valiantfighter,
+                R.drawable.poppydevastatingblow,
+                R.drawable.poppyparagonofdemacia,
+                R.drawable.poppyheroiccharge,
+                R.drawable.poppydiplomaticimmunity));
+
+        heroes.add(new Hero("Quinn",
+                R.drawable.quinn,
+                R.drawable.quinn_passive,
+                R.drawable.quinnq,
+                R.drawable.quinnw,
+                R.drawable.quinne,
+                R.drawable.quinnr));
+
+        heroes.add(new Hero("Rammus",
+                R.drawable.rammus,
+                R.drawable.armordillo_scavengearmor,
+                R.drawable.powerball,
+                R.drawable.defensiveballcurl,
+                R.drawable.puncturingtaunt,
+                R.drawable.tremors2));
+
+        heroes.add(new Hero("Renekton",
+                R.drawable.renekton,
+                R.drawable.renekton_predator,
+                R.drawable.renektoncleave,
+                R.drawable.renektonpreexecute,
+                R.drawable.renektonsliceanddice,
+                R.drawable.renektonreignofthetyrant));
+
+        heroes.add(new Hero("Rengar",
+                R.drawable.rengar,
+                R.drawable.rengar_passive,
+                R.drawable.rengarq,
+                R.drawable.rengarw,
+                R.drawable.rengare,
+                R.drawable.rengarr));
+
+        heroes.add(new Hero("Riven",
+                R.drawable.riven,
+                R.drawable.rivenrunicblades,
+                R.drawable.riventricleave,
+                R.drawable.rivenmartyr,
+                R.drawable.rivenfeint,
+                R.drawable.rivenfengshuiengine));
+
+        heroes.add(new Hero("Rumble",
+                R.drawable.rumble,
+                R.drawable.rumble_junkyard_titan1,
+                R.drawable.rumbleflamethrower,
+                R.drawable.rumbleshield,
+                R.drawable.rumblegrenade,
+                R.drawable.rumblecarpetbomb));
+
+        heroes.add(new Hero("Ryze",
+                R.drawable.ryze,
+                R.drawable.ryze_spellstrike,
+                R.drawable.overload,
+                R.drawable.runeprison,
+                R.drawable.spellflux,
+                R.drawable.desperatepower));
+
+        heroes.add(new Hero("Sejuani",
+                R.drawable.sejuani,
+                R.drawable.sejuani_passive,
+                R.drawable.sejuaniarcticassault,
+                R.drawable.sejuaninorthernwinds,
+                R.drawable.sejuaniwintersclaw,
+                R.drawable.sejuaniglacialprisonstart));
 
 
 
