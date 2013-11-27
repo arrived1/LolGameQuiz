@@ -360,7 +360,7 @@ public class DataBase {
                 R.drawable.khazixe,
                 R.drawable.khazixr));
 
-        heroes.add(new Hero("\Kog'Maw",
+        heroes.add(new Hero("Kog'Maw",
                 R.drawable.kogmaw,
                 R.drawable.kogmaw_icathiansurprise,
                 R.drawable.kogmawcausticspittle,
@@ -623,6 +623,62 @@ public class DataBase {
                 R.drawable.sejuaninorthernwinds,
                 R.drawable.sejuaniwintersclaw,
                 R.drawable.sejuaniglacialprisonstart));
+
+        heroes.add(new Hero("Shaco",
+                R.drawable.shaco,
+                R.drawable.jester_careful_strikes,
+                R.drawable.deceive,
+                R.drawable.jackinthebox,
+                R.drawable.twoshivpoison,
+                R.drawable.hallucinatefull));
+
+        heroes.add(new Hero("Shen",
+                R.drawable.shen,
+                R.drawable.shen_kistrike,
+                R.drawable.shenvorpalstar,
+                R.drawable.shenfeint,
+                R.drawable.shenshadowdash,
+                R.drawable.shenstandunited));
+
+        heroes.add(new Hero("Shyvana",
+                R.drawable.shyvana,
+                R.drawable.shyvanareinforcedscales,
+                R.drawable.shyvanadoubleattack,
+                R.drawable.shyvanaimmolationaura,
+                R.drawable.shyvanafireball,
+                R.drawable.shyvanatransformcast));
+
+        heroes.add(new Hero("Singed",
+                R.drawable.singed,
+                R.drawable.chemicalman_empoweredbulwark,
+                R.drawable.poisontrail,
+                R.drawable.megaadhesive,
+                R.drawable.fling,
+                R.drawable.insanitypotion));
+
+        heroes.add(new Hero("Sion",
+                R.drawable.sion,
+                R.drawable.sion_feelnopain,
+                R.drawable.crypticgaze,
+                R.drawable.deathscaressfull,
+                R.drawable.enrage,
+                R.drawable.cannibalism));
+
+        heroes.add(new Hero("Sivir",
+                R.drawable.sivir,
+                R.drawable.sivir_passive,
+                R.drawable.sivirq,
+                R.drawable.sivirw,
+                R.drawable.sivire,
+                R.drawable.sivirr));
+
+        heroes.add(new Hero("Skarner",
+                R.drawable.skarner,
+                R.drawable.skarnerenergize,
+                R.drawable.skarnervirulentslash,
+                R.drawable.skarnerexoskeleton,
+                R.drawable.skarnerfracture,
+                R.drawable.skarnerimpale));
 
 
 
