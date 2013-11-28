@@ -680,6 +680,237 @@ public class DataBase {
                 R.drawable.skarnerfracture,
                 R.drawable.skarnerimpale));
 
+        heroes.add(new Hero("Sona",
+                R.drawable.sona,
+                R.drawable.sona_powerchordcharged,
+                R.drawable.sonahymnofvalor,
+                R.drawable.sonaariaofperseverance,
+                R.drawable.sonasongofdiscord,
+                R.drawable.sonacrescendo));
+
+        heroes.add(new Hero("Soraka",
+                R.drawable.soraka,
+                R.drawable.soraka_consecration,
+                R.drawable.starcall,
+                R.drawable.astralblessing,
+                R.drawable.infusewrapper,
+                R.drawable.wish));
+
+        heroes.add(new Hero("Swain",
+                R.drawable.swain,
+                R.drawable.swaincarrionrenewal,
+                R.drawable.swaindecrepify,
+                R.drawable.swainshadowgrasp,
+                R.drawable.swaintorment,
+                R.drawable.swainmetamorphism));
+
+        heroes.add(new Hero("Syndra",
+                R.drawable.syndra,
+                R.drawable.syndrapassive,
+                R.drawable.syndraq,
+                R.drawable.syndraw,
+                R.drawable.syndrae,
+                R.drawable.syndrar));
+
+        heroes.add(new Hero("Talon",
+                R.drawable.talon,
+                R.drawable.talonmercy,
+                R.drawable.talonnoxiandiplomacy,
+                R.drawable.talonrake,
+                R.drawable.taloncutthroat,
+                R.drawable.talonshadowassault));
+
+        heroes.add(new Hero("Taric",
+                R.drawable.taric,
+                R.drawable.gemknight_gemcraft,
+                R.drawable.imbue,
+                R.drawable.shatter,
+                R.drawable.dazzle,
+                R.drawable.tarichammersmash));
+
+        heroes.add(new Hero("Teemo",
+                R.drawable.teemo,
+                R.drawable.teemo_camouflage,
+                R.drawable.blindingdart,
+                R.drawable.movequick,
+                R.drawable.toxicshot,
+                R.drawable.bantamtrap));
+
+        heroes.add(new Hero("Thresh",
+                R.drawable.thresh,
+                R.drawable.thresh_passive,
+                R.drawable.threshq,
+                R.drawable.threshw,
+                R.drawable.threshe,
+                R.drawable.threshrpenta));
+
+        heroes.add(new Hero("Tristana",
+                R.drawable.tristana,
+                R.drawable.tristana_drawabead,
+                R.drawable.rapidfire,
+                R.drawable.rocketjump,
+                R.drawable.detonatingshot,
+                R.drawable.bustershot));
+
+        heroes.add(new Hero("Trundle",
+                R.drawable.trundle,
+                R.drawable.trundle_passive,
+                R.drawable.trundletrollsmash,
+                R.drawable.trundledesecrate,
+                R.drawable.trundlecircle,
+                R.drawable.trundlepain));
+
+        heroes.add(new Hero("Tryndamere",
+                R.drawable.tryndamere,
+                R.drawable.darkchampion_fury,
+                R.drawable.bloodlust,
+                R.drawable.mockingshout,
+                R.drawable.slashcast,
+                R.drawable.undyingrage));
+
+        heroes.add(new Hero("Twisted Fate",
+                R.drawable.twistedfate,
+                R.drawable.cardmaster_sealfate,
+                R.drawable.wildcards,
+                R.drawable.pickacard,
+                R.drawable.cardmasterstack,
+                R.drawable.destiny));
+
+        heroes.add(new Hero("Twitch",
+                R.drawable.twitch,
+                R.drawable.twitch_deadlyvenom,
+                R.drawable.hideinshadows,
+                R.drawable.twitchvenomcask,
+                R.drawable.expunge,
+                R.drawable.fullautomatic));
+
+        heroes.add(new Hero("Udyr",
+                R.drawable.udyr,
+                R.drawable.udyr_monkeysagility,
+                R.drawable.udyrtigerstance,
+                R.drawable.udyrturtlestance,
+                R.drawable.udyrbearstance,
+                R.drawable.udyrphoenixstance));
+
+        heroes.add(new Hero("Vladimir",
+                R.drawable.vladimir,
+                R.drawable.vladimir_bloodgorged,
+                R.drawable.vladimirtransfusion,
+                R.drawable.vladimirsanguinepool,
+                R.drawable.vladimirtidesofblood,
+                R.drawable.vladimirhemoplague));
+
+        heroes.add(new Hero("Vi",
+                R.drawable.vi,
+                R.drawable.vipassive,
+                R.drawable.viq,
+                R.drawable.viw,
+                R.drawable.vie,
+                R.drawable.vir));
+
+        heroes.add(new Hero("Veigar",
+                R.drawable.veigar,
+                R.drawable.veigar_entropy,
+                R.drawable.veigarbalefulstrike,
+                R.drawable.veigardarkmatter,
+                R.drawable.veigareventhorizon,
+                R.drawable.veigarprimordialburst));
+
+        heroes.add(new Hero("Vayne",
+                R.drawable.vayne,
+                R.drawable.vayne_nighthunter,
+                R.drawable.vaynetumble,
+                R.drawable.vaynesilveredbolts,
+                R.drawable.vaynecondemn,
+                R.drawable.vayneinquisition));
+
+        heroes.add(new Hero("Varus",
+                R.drawable.varus,
+                R.drawable.varuspassive,
+                R.drawable.varusq,
+                R.drawable.varusw,
+                R.drawable.varuse,
+                R.drawable.varusr));
+
+        heroes.add(new Hero("Urgot",
+                R.drawable.urgot,
+                R.drawable.urgot_passive,
+                R.drawable.urgotheatseekingmissile,
+                R.drawable.urgotterrorcapacitoractive2,
+                R.drawable.urgotplasmagrenade,
+                R.drawable.urgotswap2));
+
+        heroes.add(new Hero("Volibear",
+                R.drawable.volibear,
+                R.drawable.volibearpassive,
+                R.drawable.volibearq,
+                R.drawable.volibearw,
+                R.drawable.volibeare,
+                R.drawable.volibearr));
+
+        heroes.add(new Hero("Warwick",
+                R.drawable.warwick,
+                R.drawable.warwick_innerhunger,
+                R.drawable.hungeringstrike,
+                R.drawable.hunterscall,
+                R.drawable.bloodscent,
+                R.drawable.infiniteduress));
+
+        heroes.add(new Hero("Wukong",
+                R.drawable.monkeyking,
+                R.drawable.monkeykingstoneskin,
+                R.drawable.monkeykingdoubleattack,
+                R.drawable.monkeykingdecoy,
+                R.drawable.monkeykingnimbus,
+                R.drawable.monkeykingspintowin));
+
+        heroes.add(new Hero("Xerath",
+                R.drawable.xerath,
+                R.drawable.xerath_ascendedform,
+                R.drawable.xeratharcanopulse,
+                R.drawable.xerathlocusofpower,
+                R.drawable.xerathmagechains,
+                R.drawable.xeratharcanebarragewrapper));
+
+        heroes.add(new Hero("Xin Zhao",
+                R.drawable.xinzhao,
+                R.drawable.xinzhao_tirelesswarrior,
+                R.drawable.xenzhaocombotarget,
+                R.drawable.xenzhaobattlecry,
+                R.drawable.xenzhaosweep,
+                R.drawable.xenzhaoparry));
+
+        heroes.add(new Hero("Yorick",
+                R.drawable.yorick,
+                R.drawable.yorickunholycovenant,
+                R.drawable.yorickspectral,
+                R.drawable.yorickdecayed,
+                R.drawable.yorickravenous,
+                R.drawable.yorickreviveally));
+
+        heroes.add(new Hero("Zac",
+                R.drawable.zac,
+                R.drawable.zacpassive,
+                R.drawable.zacq,
+                R.drawable.zacw,
+                R.drawable.zace,
+                R.drawable.zacr));
+
+        heroes.add(new Hero("Zilean",
+                R.drawable.zilean,
+                R.drawable.chronokeeper_slow,
+                R.drawable.timebomb,
+                R.drawable.rewind,
+                R.drawable.timewarp,
+                R.drawable.chronoshift));
+
+        heroes.add(new Hero("Zyra",
+                R.drawable.zyra,
+                R.drawable.zyrap,
+                R.drawable.zyraqfissure,
+                R.drawable.zyraseed,
+                R.drawable.zyragraspingroots,
+                R.drawable.zyrabramblezone));
 
 
 //        heroes.add(new Hero("",
