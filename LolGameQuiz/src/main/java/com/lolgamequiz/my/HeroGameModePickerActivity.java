@@ -17,12 +17,6 @@ public class HeroGameModePickerActivity extends Activity {
         addListenerOnButtonHeroQuizDeadMatchHardcore();
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.main, menu);
-//        return true;
-//    }
-
     private void addListenerOnButtonHeroQuizNoRepead() {
         final Button button = (Button)findViewById(R.id.ModePick1);
         button.setOnClickListener(new ButtonOnClickListeneHeroNoRepead(this, 3));

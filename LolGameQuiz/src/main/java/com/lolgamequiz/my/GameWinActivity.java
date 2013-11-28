@@ -14,7 +14,7 @@ public class GameWinActivity extends Activity {
         setContentView(R.layout.activity_game_win);
 
         GameSounds sounds = new GameSounds(this);
-        sounds.gameOver();
+        sounds.gameWin();
 
         Bundle extras = getIntent().getExtras();
         int points = extras.getInt("SCORE");

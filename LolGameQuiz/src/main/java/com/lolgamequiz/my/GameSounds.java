@@ -22,68 +22,63 @@ public class GameSounds {
     }
 
     public void welcome() {
-//        playSound(R.raw.welcome);
+        playSound(R.raw.Female1_OnWelcomeSummonersRif);
     }
 
     public void playMusic() {
-//        playSound(R.raw.gamestartup2);
+        playSound(R.raw.Odin1_female1_Opening_Bat);
     }
 
     public void correct() {
-//        playSound(R.raw.correct);
+        playSound(R.raw.correct);
     }
 
     public void incorrect() {
-//        playSound(R.raw.incorrect);
+        playSound(R.raw.incorrect);
     }
 
     public void gameOver() {
-//        playSound(R.raw.game_over);
+        playSound(R.raw.Female1_OnDefeat_1);
+    }
+
+    public void gameWin() {
+        playSound(R.raw.Female1_OnVictory_1);
     }
 
     public void correctNumber(int num) {
         switch (num) {
             case 1:
-//                playSound(R.raw.announcer_1stblood_01);
+                playSound(R.raw.Female1_OnFirstBlood_1);
                 break;
             case 2:
-//                playSound(R.raw.announcer_kill_double_01);
+                playSound(R.raw.Female1_OnChampionDoubleKillY1);
                 break;
             case 3:
-//                playSound(R.raw.announcer_kill_triple_01);
+                playSound(R.raw.Female1_OnChampionTripleKillY1);
                 break;
             case 5:
-//                playSound(R.raw.announcer_kill_ultra_01);
+                playSound(R.raw.Female1_OnChampionQuadraKillY1);
                 break;
             case 10:
-//                playSound(R.raw.announcer_kill_rampage_01);
-                break;
-            case 15:
-//                playSound(R.raw.announcer_kill_spree_01);
+                playSound(R.raw.Female1_OnChampionPentaKillYo1);
                 break;
             case 20:
-//                playSound(R.raw.announcer_kill_dominate_01);
-                break;
-            case 30:
-//                playSound(R.raw.announcer_kill_mega_01);
+                playSound(R.raw.Female1_OnKillingSpreeSet1You1);
                 break;
             case 50:
-//                playSound(R.raw.announcer_kill_unstop_01);
+                playSound(R.raw.Female1_OnKillingSpreeSet2You1);
                 break;
             case 80:
-//                playSound(R.raw.announcer_kill_wicked_01);
+                playSound(R.raw.Female1_OnKillingSpreeSet3You);
                 break;
-            case 120:
-//                playSound(R.raw.announcer_kill_monster_01);
+            case 100:
+                playSound(R.raw.Female1_OnKillingSpreeSet3You);
                 break;
-            case 170:
-//                playSound(R.raw.announcer_kill_godlike_01);
+            case 140:
+                playSound(R.raw.Female1_OnKillingSpreeSet5You1);
                 break;
-            case 230:
-//                playSound(R.raw.announcer_kill_holy_01);
-                break;
-            case 300:
-//                playSound(R.raw.announcer_ownage_01);
+            case 200:
+                playSound(R.raw.Female1_OnKillingSpreeSet6You1);
                 break;
             default:
                 break;

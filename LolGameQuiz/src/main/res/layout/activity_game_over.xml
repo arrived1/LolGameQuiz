@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/logo"
+            android:layout_marginTop="5px"
             android:orientation="horizontal" >
 
             <ImageView
@@ -45,6 +46,13 @@
 
             <ImageView
                 android:id="@+id/skill3"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="5px"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/skill4"
                 android:layout_width="100px"
                 android:layout_height="100px"
                 android:layout_marginLeft="5px"
