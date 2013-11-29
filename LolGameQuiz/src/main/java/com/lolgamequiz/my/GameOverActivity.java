@@ -39,7 +39,7 @@ public class GameOverActivity extends Activity {
         ImageView skill3 = (ImageView)findViewById(R.id.skill3);
         skill3.setImageResource(hero.getSkill(3));
 
-        ImageView skill4 = (ImageView)findViewById(R.id.skill3);
+        ImageView skill4 = (ImageView)findViewById(R.id.skill4);
         skill4.setImageResource(hero.getSkill(4));
 
         TextView score = (TextView)findViewById(R.id.scoreRes);

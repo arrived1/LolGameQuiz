@@ -11,7 +11,7 @@
             android:id="@+id/logo"
             android:layout_width="400px"
             android:layout_height="300px"
-            android:layout_marginTop="110px"
+            android:layout_marginTop="125px"
             android:layout_centerHorizontal="true" />
 
         <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/logo"
-            android:layout_marginTop="5px"
+            android:layout_marginTop="10px"
             android:orientation="horizontal" >
 
             <ImageView
@@ -67,7 +67,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/skills"
                 android:textSize="80px"
-                android:textColor="@color/red"
+                android:textColor="@color/blue"
                 android:text="@string/game_over" />
 
 
@@ -94,7 +94,7 @@
                         android:layout_alignLeft="@id/scoreTxtRes"
                         android:layout_marginLeft="5px"
                         android:textSize="60px"
-                        android:textColor="@color/red" />
+                        android:textColor="@color/blue" />
 
             </LinearLayout>
 
@@ -121,7 +121,7 @@
                         android:layout_alignLeft="@id/timeTxtRes"
                         android:layout_marginLeft="5px"
                         android:textSize="60px"
-                        android:textColor="@color/red" />
+                        android:textColor="@color/blue" />
 
         </LinearLayout>
 

@@ -22,11 +22,11 @@ public class GameSounds {
     }
 
     public void welcome() {
-        playSound(R.raw.Female1_OnWelcomeSummonersRif);
+        playSound(R.raw.female1_onwelcomesummonersrif);
     }
 
     public void playMusic() {
-        playSound(R.raw.Odin1_female1_Opening_Bat);
+        playSound(R.raw.odin1_female1_opening_bat);
     }
 
     public void correct() {
@@ -38,47 +38,47 @@ public class GameSounds {
     }
 
     public void gameOver() {
-        playSound(R.raw.Female1_OnDefeat_1);
+        playSound(R.raw.female1_ondefeat_1);
     }
 
     public void gameWin() {
-        playSound(R.raw.Female1_OnVictory_1);
+        playSound(R.raw.female1_onvictory_1);
     }
 
     public void correctNumber(int num) {
         switch (num) {
             case 1:
-                playSound(R.raw.Female1_OnFirstBlood_1);
+                playSound(R.raw.female1_onfirstblood_1);
                 break;
             case 2:
-                playSound(R.raw.Female1_OnChampionDoubleKillY1);
+                playSound(R.raw.female1_onchampiondoublekilly1);
                 break;
             case 3:
-                playSound(R.raw.Female1_OnChampionTripleKillY1);
+                playSound(R.raw.female1_onchampiontriplekilly1);
                 break;
             case 5:
-                playSound(R.raw.Female1_OnChampionQuadraKillY1);
+                playSound(R.raw.female1_onchampionquadrakilly1);
                 break;
             case 10:
-                playSound(R.raw.Female1_OnChampionPentaKillYo1);
+                playSound(R.raw.female1_onchampionpentakillyo1);
                 break;
             case 20:
-                playSound(R.raw.Female1_OnKillingSpreeSet1You1);
+                playSound(R.raw.female1_onkillingspreeset1you1);
                 break;
             case 50:
-                playSound(R.raw.Female1_OnKillingSpreeSet2You1);
+                playSound(R.raw.female1_onkillingspreeset2you1);
                 break;
             case 80:
-                playSound(R.raw.Female1_OnKillingSpreeSet3You);
+                playSound(R.raw.female1_onkillingspreeset3you);
                 break;
             case 100:
-                playSound(R.raw.Female1_OnKillingSpreeSet3You);
+                playSound(R.raw.female1_onkillingspreeset3you);
                 break;
             case 140:
-                playSound(R.raw.Female1_OnKillingSpreeSet5You1);
+                playSound(R.raw.female1_onkillingspreeset5you1);
                 break;
             case 200:
-                playSound(R.raw.Female1_OnKillingSpreeSet6You1);
+                playSound(R.raw.female1_onkillingspreeset6you1);
                 break;
             default:
                 break;
