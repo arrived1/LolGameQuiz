@@ -22,7 +22,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final int DATABASE_SIZE = 100;
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "statisticManager";
+    private static final String DATABASE_NAME = "statisticManagerLol";
     private static final String TABLE_STATISTIC_SKILL_SINGLE_RANDOM = "statisticSkillSingleRandom";
     private static final String TABLE_STATISTIC_SKILL_DEATH_MATCH = "statisticSkillDeathMatch";
     private static final String TABLE_STATISTIC_HERO_SINGLE_RANDOM = "statisticHeroSingleRandom";

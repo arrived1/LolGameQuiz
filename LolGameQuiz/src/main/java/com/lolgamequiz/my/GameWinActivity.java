@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 
 public class GameWinActivity extends Activity {
+    private Animations animations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +21,21 @@ public class GameWinActivity extends Activity {
         int points = extras.getInt("SCORE");
         String timeTxt = extras.getString("TIME");
 
+        animations = new Animations(this);
+
         ImageView gameOverImage = (ImageView)findViewById(R.id.logo);
+        gameOverImage.setAnimation(animations.getAnimFadein());
         gameOverImage.setImageResource(R.drawable.logo);
 
         TextView score = (TextView)findViewById(R.id.scoreRes);
+        score.setAnimation(animations.getRightLeft());
         score.setText(Integer.toString(points));
 
         TextView time = (TextView)findViewById(R.id.timeRes);
+        time.setAnimation(animations.getRightLeft());
         time.setText(timeTxt);
+
+        TextView gameWinTxt = (TextView)findViewById(R.id.gameWinTxt);
+        gameWinTxt.setAnimation(animations.getAnimFadein());
     }
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import java.util.Random;
 import java.util.Vector;
@@ -26,6 +27,8 @@ public class SkillQuizActivityDeathMatch extends Activity {
 
     private int correctAnswer = -1;
 
+    private Animations animations;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,10 +42,13 @@ public class SkillQuizActivityDeathMatch extends Activity {
         this.timer = new Timer(this);
         score.prepareScore();
 
+        animations = new Animations(this);
+
         addAdView();
 
         prepareBoard();
         prepareQuestion();
+        setAnim();
     }
 
     private void addAdView() {
@@ -125,6 +131,17 @@ public class SkillQuizActivityDeathMatch extends Activity {
                                                    Integer.toString(score.getGuessesLeft()),
                                                    timer.getTimeTxt().toString());
         db.addRecord(record);
+    }
+
+    private void setAnim() {
+        ImageView pic = (ImageView)findViewById(R.id.pic);
+        pic.setAnimation(animations.getAnimFadein());
+
+        LinearLayout layout1 = (LinearLayout)findViewById(R.id.buttonRow1);
+        layout1.setAnimation(animations.getLeftRight());
+
+        LinearLayout layout2 = (LinearLayout)findViewById(R.id.buttonRow2);
+        layout2.setAnimation(animations.getRightLeft());
     }
 
     private void prepareBoard() {

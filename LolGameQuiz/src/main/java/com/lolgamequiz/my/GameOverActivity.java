@@ -3,10 +3,12 @@ package com.lolgamequiz.my;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
 public class GameOverActivity extends Activity {
+    private Animations animations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +26,10 @@ public class GameOverActivity extends Activity {
         DataBase base = new DataBase();
         Hero hero = base.find(heroName);
 
+        animations = new Animations(this);
+
         ImageView gameOverImage = (ImageView)findViewById(R.id.logo);
+        gameOverImage.setAnimation(animations.getAnimFadein());
         gameOverImage.setImageResource(hero.getPic());
 
         ImageView skill0 = (ImageView)findViewById(R.id.skill0);
@@ -43,9 +48,17 @@ public class GameOverActivity extends Activity {
         skill4.setImageResource(hero.getSkill(4));
 
         TextView score = (TextView)findViewById(R.id.scoreRes);
+        score.setAnimation(animations.getRightLeft());
         score.setText(Integer.toString(points));
 
         TextView time = (TextView)findViewById(R.id.timeRes);
+        time.setAnimation(animations.getRightLeft());
         time.setText(timeTxt);
+
+        LinearLayout layout = (LinearLayout)findViewById(R.id.skills);
+        layout.setAnimation(animations.getAnimFadein());
+
+        TextView gameOverTxt = (TextView)findViewById(R.id.gameOverTxt);
+        gameOverTxt.setAnimation(animations.getAnimFadein());
     }
 }

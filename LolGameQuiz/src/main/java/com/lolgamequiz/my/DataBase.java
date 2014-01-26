@@ -935,7 +935,9 @@ public class DataBase {
     }
 
     public int getSkillAmount() {
-        return heroes.get(0).getSkillAmount();
+        if(heroes.size() > 0)
+            return heroes.get(0).getSkillAmount();
+        return 4;
     }
 
     public Hero find(String name) {
