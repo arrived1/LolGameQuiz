@@ -13,7 +13,7 @@ public class GameSounds {
             mp.start();
         }
         catch(Exception e) {
-            if(!mp.equals(null))
+            if(mp != null)
                 mp.release();
         }
     }

@@ -378,7 +378,7 @@ public class DataBase {
 
         heroes.add(new Hero("Lee Sin",
                 R.drawable.leesin,
-                R.drawable.fioraflurry,
+                R.drawable.leesinpassive,
                 R.drawable.blindmonkqone,
                 R.drawable.blindmonkwone,
                 R.drawable.blindmonkeone,
