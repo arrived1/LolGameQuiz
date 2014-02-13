@@ -21,4 +21,12 @@
     <string name="gameModeExplanation3">Masz 3 szanse, gra się nigdy nie kończy!</string>
     <string name="gameModeExplanation4">Hardcore, masz tylko 1 szansę, gra się nigdy nie kończy!</string>
 
+
+    <string name="rateNow">Oceń</string>
+    <string name="rateLater">Oceń później</string>
+    <string name="rateNever">Nie, dzięki</string>
+
+    <string name="rateTxt1">Jeśli lubisz grę</string>
+    <string name="rateTxt2"> poświęć chwile i wystaw ocenę.\n\nDzięki za pomoc!</string>
+
 </resources>

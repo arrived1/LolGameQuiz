@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class RateUs {
-    private final static String APP_TITLE = "League of Legends Game Quiz";
+    private final static String APP_TITLE = "LoL Game Quiz";
     private final static String APP_PNAME = "com.lolgamequiz.my";
     
     private final static int DAYS_UNTIL_PROMPT = 3;
@@ -47,14 +48,18 @@ public class RateUs {
     
     public static void showRateDialog(final Context mContext, final SharedPreferences.Editor editor) {
         final Dialog dialog = new Dialog(mContext);
+        Resources resources = mContext.getResources();
+
         dialog.setContentView(R.layout.rate_dialog);
-        dialog.setTitle("Rate " + APP_TITLE);
+        dialog.setTitle(resources.getString(R.string.rateNow) + " " + resources.getString(R.string.app_name));
 
         TextView tv = (TextView)dialog.findViewById(R.id.rateMainTxt);
-        tv.setText("If you enjoy using " + APP_TITLE + ", please take a moment to rate it. Thanks for your support!");
+        tv.setText(resources.getString(R.string.rateTxt1) + " " +
+                   resources.getString(R.string.app_name) + " " +
+                   resources.getString(R.string.rateTxt2));
 
         Button b1 = (Button)dialog.findViewById(R.id.buttonRate1);
-        b1.setText("Rate " + APP_TITLE);
+        b1.setText(resources.getString(R.string.rateNow) + " " + APP_TITLE);
         b1.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + APP_PNAME)));
@@ -63,7 +68,7 @@ public class RateUs {
         });
 
         Button b2 = (Button)dialog.findViewById(R.id.buttonRate2);
-        b2.setText("Remind me later");
+        b2.setText(resources.getString(R.string.rateLater));
         b2.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 dialog.dismiss();
@@ -71,7 +76,7 @@ public class RateUs {
         });
 
         Button b3 = (Button)dialog.findViewById(R.id.buttonRate3);
-        b3.setText("No, thanks");
+        b3.setText(resources.getString(R.string.rateNever));
         b3.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 if (editor != null) {

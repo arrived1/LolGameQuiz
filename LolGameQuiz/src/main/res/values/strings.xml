@@ -33,5 +33,7 @@
     <string name="rateLater">Remind me later</string>
     <string name="rateNever">No, thanks</string>
 
+    <string name="rateTxt1">If you enjoy using</string>
+    <string name="rateTxt2"> please take a moment to rate it.\nThanks for your support!</string>
 
 </resources>
