@@ -21,6 +21,7 @@ public class GameActivity extends Activity {
         addListenerOnButtonHeroQuiz();
         addListenerOnButtonScoreBoard();
 
+        RateUs.showRateDialog(this, null);
 
         ImageView image = (ImageView)findViewById((R.id.logo));
         image.setAnimation(animations.getAnimFadein());

@@ -16,17 +16,6 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/logo" />
 
-    <!--<Button-->
-        <!--android:id="@+id/heroQuiz"-->
-        <!--style="@style/btnStylesorbus"-->
-        <!--android:layout_width="280dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_below="@id/logo"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:text="@string/hero_quiz" />-->
-
     <Button
         android:id="@+id/skillQuiz"
         style="@style/btnStylesorbus"
