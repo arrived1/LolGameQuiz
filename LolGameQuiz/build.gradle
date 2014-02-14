@@ -23,10 +23,12 @@ android {
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 16
+        targetSdkVersion 19
     }
 }
 
 dependencies {
+    compile 'com.android.support:gridlayout-v7:19.0.1'
+    compile 'com.android.support:support-v4:19.0.1'
 	compile 'com.android.support:appcompat-v7:+'
 }

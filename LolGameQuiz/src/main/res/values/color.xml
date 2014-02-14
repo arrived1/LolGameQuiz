@@ -5,4 +5,13 @@
     <color name="red">#ff8f010d</color>
     <color name="blue">#36797f</color>
 
+<color name="black_overlay">#66000000</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+
 </resources>
