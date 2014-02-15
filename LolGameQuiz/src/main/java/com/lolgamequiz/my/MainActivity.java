@@ -143,7 +143,7 @@ public class MainActivity extends ActionBarActivity
                 //fragment = new PhotosFragment();
                 break;
             case 3:
-                fragment = new GameFragment();
+                fragment = new ScoreFragment();
                 //fragment = new CommunityFragment();
                 break;
             case 4:
