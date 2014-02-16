@@ -136,15 +136,12 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 1:
                 fragment = new HeroQuizModePickerFragment();
-                //fragment = new FindPeopleFragment();
                 break;
             case 2:
                 fragment = new SkillQuizModePickerFragment();
-                //fragment = new PhotosFragment();
                 break;
             case 3:
                 fragment = new ScoreFragment();
-                //fragment = new CommunityFragment();
                 break;
             case 4:
                 fragment = new GameFragment();
