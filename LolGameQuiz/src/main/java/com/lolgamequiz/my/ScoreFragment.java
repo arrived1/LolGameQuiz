@@ -20,13 +20,13 @@ public class ScoreFragment extends Fragment {
 
 
         mTabHost.addTab(mTabHost.newTabSpec("Skill Single Random").setIndicator("Skill Single Random"),
-                TabFragmentHeroDeathMetch.class, null);
+                TabFragmentHeroSingleRandom.class, null);
         mTabHost.addTab(mTabHost.newTabSpec("Skill Death Match").setIndicator("Skill Death Match"),
                 TabFragmentHeroDeathMetch.class, null);
         mTabHost.addTab(mTabHost.newTabSpec("Hero Single Random").setIndicator("Hero Single Random"),
-                TabFragmentHeroDeathMetch.class, null);
+                TabFragmentSkillSingleRandom.class, null);
         mTabHost.addTab(mTabHost.newTabSpec("Hero Death Match").setIndicator("Hero Death Match"),
-                TabFragmentHeroDeathMetch.class, null);
+                TabFragmentSkillDeathMatch.class, null);
 
         return mTabHost;
     }
