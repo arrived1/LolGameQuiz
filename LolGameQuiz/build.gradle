@@ -12,10 +12,10 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    compile 'com.android.support:support-v4:13.0.+'
-    compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
-}
+//dependencies {
+//    compile 'com.android.support:support-v4:13.0.+'
+//    compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
+//}
 
 android {
     compileSdkVersion 19
@@ -31,4 +31,6 @@ dependencies {
     compile 'com.android.support:gridlayout-v7:19.0.1'
     compile 'com.android.support:support-v4:19.0.1'
 	compile 'com.android.support:appcompat-v7:+'
+    compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
+    compile 'com.google.android.gms:play-services:4.0.30'
 }

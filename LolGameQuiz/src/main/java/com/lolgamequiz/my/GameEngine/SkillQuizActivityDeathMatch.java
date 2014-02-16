@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 import java.util.Random;
 import java.util.Vector;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.lolgamequiz.my.DataBase.HeroBase;
 import com.lolgamequiz.my.DataBase.DataBaseRecord;
 import com.lolgamequiz.my.DataBase.DatabaseHandler;
@@ -59,7 +59,11 @@ public class SkillQuizActivityDeathMatch extends Activity {
 
     private void addAdView() {
         AdView ad = (AdView)findViewById(R.id.adView);
-        ad.loadAd(new AdRequest());
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("TEST_DEVICE_ID")
+                .build();
+        ad.loadAd(adRequest);
     }
 
     private void prepareQuestion()
