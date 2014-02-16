@@ -61,8 +61,8 @@ public class HeroQuizActivityNorRepead extends Activity {
     private void addAdView() {
         AdView ad = (AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("TEST_DEVICE_ID")
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+//                .addTestDevice("TEST_DEVICE_ID")
                 .build();
         ad.loadAd(adRequest);
     }
