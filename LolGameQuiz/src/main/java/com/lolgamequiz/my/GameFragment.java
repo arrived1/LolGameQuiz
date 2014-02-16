@@ -29,7 +29,8 @@ public class GameFragment extends Fragment {
 
         animations = new Animations(context);
 
-        RateUs.showRateDialog(context, null);
+        RateUs.app_launched(context);
+        //RateUs.showRateDialog(context, null); //test purposes
 
         ImageView image = (ImageView)rootView.findViewById((R.id.logo));
         image.setAnimation(animations.getAnimFadein());
