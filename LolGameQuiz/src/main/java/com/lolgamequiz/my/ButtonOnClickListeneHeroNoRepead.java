@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
+import com.lolgamequiz.my.GameEngine.HeroQuizActivityNorRepead;
+
 public class ButtonOnClickListeneHeroNoRepead implements View.OnClickListener {
     private Activity actv;
     private Context context;

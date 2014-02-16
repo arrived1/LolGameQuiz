@@ -1,8 +1,10 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 
 import android.app.Activity;
 import android.widget.TextView;
+
+import com.lolgamequiz.my.R;
 
 public class Score {
     private Activity actv;

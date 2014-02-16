@@ -1,11 +1,13 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.DataBase;
+
+import com.lolgamequiz.my.R;
 
 import java.util.Vector;
 
-public class DataBase {
+public class HeroBase {
     public Vector<Hero> heroes;
 
-    public DataBase() {
+    public HeroBase() {
         heroes = new Vector<Hero>();
 
         heroes.add(new Hero("Aatrox",

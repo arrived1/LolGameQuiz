@@ -1,30 +1,33 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
+import com.lolgamequiz.my.DataBase.HeroBase;
+import com.lolgamequiz.my.DataBase.DataBaseRecord;
+import com.lolgamequiz.my.DataBase.DatabaseHandler;
+import com.lolgamequiz.my.DataBase.Hero;
+import com.lolgamequiz.my.DataBase.TABLE;
+import com.lolgamequiz.my.R;
 
 import java.util.Random;
 import java.util.Vector;
 
 
-public class SkillQuizActivityNorRepead extends Activity {
+public class HeroQuizActivityDeathMatch extends Activity {
     private GameSounds sounds;
     private Score score;
     private Timer timer;
     private Random rand = new Random();
 
-    private DataBase base = new DataBase();
-    private DataBase restOfHeros = new DataBase();
+    private HeroBase base = new HeroBase();
     private Hero newHero;
     private Vector<ImageButton> answers = new Vector<ImageButton>();
 
@@ -35,7 +38,7 @@ public class SkillQuizActivityNorRepead extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_skill_quiz);
+        setContentView(R.layout.activity_hero_quiz);
 
         Bundle extras = getIntent().getExtras();
         int chances = extras.getInt("CHANCES");
@@ -51,7 +54,9 @@ public class SkillQuizActivityNorRepead extends Activity {
 
         prepareBoard();
         prepareQuestion();
+
         setAnim();
+
     }
 
     private void addAdView() {
@@ -61,39 +66,34 @@ public class SkillQuizActivityNorRepead extends Activity {
 
     private void prepareQuestion()
     {
-        if(restOfHeros.size() == 0) {
-            gameWin();
-        }
-        else {
-            prepareHero();
-            prepareCorrectAnswer();
+        prepareSkill();
+        prepareCorrectAnswer();
 
-            for(int i = 0; i < answers.size(); ++i) {
-                if(i == correctAnswer)
-                    continue;
+        for(int i = 0; i < answers.size(); ++i) {
+            if(i == correctAnswer)
+                continue;
 
-                int heroRand = randHeroForAnswers();
-                int skillRand = rand.nextInt(base.getSkillAmount());
-                int resource = base.getHero(heroRand).getSkill(skillRand);
-                answers.get(i).setImageResource(resource);
-            }
+            int heroRand = randHeroForAnswers();
+            int resource = base.getHero(heroRand).getPic();
+            answers.get(i).setImageResource(resource);
         }
     }
 
-    private void prepareHero() {
-        int heroIdx = rand.nextInt(restOfHeros.size());
-        newHero = restOfHeros.getHero(heroIdx);
-        restOfHeros.remove(heroIdx);
+    private void prepareSkill() {
+        int heroIdx = rand.nextInt(base.size());
+        newHero = base.getHero(heroIdx);
+        base.remove(heroIdx);
+
+        int randSkill = rand.nextInt(base.getSkillAmount());
 
         ImageView heroPic = (ImageView) findViewById(R.id.pic);
-        heroPic.setImageResource(newHero.getPic());
+        heroPic.setImageResource(newHero.getSkill(randSkill));
     }
 
     private void  prepareCorrectAnswer() {
         correctAnswer = rand.nextInt(answers.size());
-        int correctSkill = rand.nextInt(base.getSkillAmount());
-        int correctResource = newHero.getSkill(correctSkill);
-        answers.get(correctAnswer).setImageResource(correctResource);
+        int correctHero = newHero.getPic();
+        answers.get(correctAnswer).setImageResource(correctHero);
     }
 
     private int randHeroForAnswers() {
@@ -121,18 +121,6 @@ public class SkillQuizActivityNorRepead extends Activity {
         }
     }
 
-    private void gameWin() {
-        timer.stopTimer();
-
-        updateDataBaseScore();
-
-        Intent myIntent = new Intent(this, GameWinActivity.class);
-        myIntent.putExtra("SCORE", score.getPoints());
-        myIntent.putExtra("TIME", timer.getTimeTxt());
-        startActivity(myIntent);
-        finish();
-    }
-
     private void gameOver() {
         timer.stopTimer();
 
@@ -147,7 +135,7 @@ public class SkillQuizActivityNorRepead extends Activity {
     }
 
     private void updateDataBaseScore() {
-        DatabaseHandler db = new DatabaseHandler(this, TABLE.SkillSingleRandom);
+        DatabaseHandler db = new DatabaseHandler(this, TABLE.HeroDeathMetch);
         DataBaseRecord record = new DataBaseRecord(Integer.toString(score.getPoints()),
                                                    Integer.toString(score.getGuessesLeft()),
                                                    timer.getTimeTxt().toString());
@@ -163,6 +151,9 @@ public class SkillQuizActivityNorRepead extends Activity {
 
         LinearLayout layout2 = (LinearLayout)findViewById(R.id.buttonRow2);
         layout2.setAnimation(animations.getRightLeft());
+
+        LinearLayout layout3 = (LinearLayout)findViewById(R.id.buttonRow3);
+        layout3.setAnimation(animations.getLeftRight());
     }
 
     private void prepareBoard() {

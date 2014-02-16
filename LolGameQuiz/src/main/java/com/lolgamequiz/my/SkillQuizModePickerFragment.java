@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.lolgamequiz.my.GameEngine.Animations;
+
 public class SkillQuizModePickerFragment extends Fragment {
     private Animations animations;
     private View rootView;

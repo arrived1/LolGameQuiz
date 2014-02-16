@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
+import com.lolgamequiz.my.GameEngine.HeroQuizActivityDeathMatch;
+
 public class ButtonOnClickListenerHeroDeathMatch implements View.OnClickListener {
     private Activity actv;
     private Context context;

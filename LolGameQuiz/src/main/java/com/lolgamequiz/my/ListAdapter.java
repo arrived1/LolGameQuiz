@@ -1,12 +1,13 @@
 package com.lolgamequiz.my;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.lolgamequiz.my.DataBase.DataBaseRecord;
 
 import java.util.ArrayList;
 

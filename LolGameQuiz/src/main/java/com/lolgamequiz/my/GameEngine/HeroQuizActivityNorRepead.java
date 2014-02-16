@@ -1,4 +1,4 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,12 @@ import android.widget.LinearLayout;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
+import com.lolgamequiz.my.DataBase.HeroBase;
+import com.lolgamequiz.my.DataBase.DataBaseRecord;
+import com.lolgamequiz.my.DataBase.DatabaseHandler;
+import com.lolgamequiz.my.DataBase.Hero;
+import com.lolgamequiz.my.DataBase.TABLE;
+import com.lolgamequiz.my.R;
 
 import java.util.Random;
 import java.util.Vector;
@@ -21,8 +27,8 @@ public class HeroQuizActivityNorRepead extends Activity {
     private Timer timer;
     private Random rand = new Random();
 
-    private DataBase base = new DataBase();
-    private DataBase restOfHeros = new DataBase();
+    private HeroBase base = new HeroBase();
+    private HeroBase restOfHeros = new HeroBase();
     private Hero newHero;
     private Vector<ImageButton> answers = new Vector<ImageButton>();
 

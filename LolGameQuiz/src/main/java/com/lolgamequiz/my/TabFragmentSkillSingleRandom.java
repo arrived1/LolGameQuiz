@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.lolgamequiz.my.DataBase.DatabaseHandler;
+import com.lolgamequiz.my.DataBase.TABLE;
+
 public class TabFragmentSkillSingleRandom extends ListFragment {
 
     @Override

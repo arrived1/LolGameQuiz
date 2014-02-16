@@ -33,73 +33,33 @@
         android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.ads.AdActivity" android:screenOrientation="portrait">
     </activity>
 
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.GameActivity"
+        <activity android:label="@string/app_name"
+        android:name=".GameEngine.SkillQuizActivityNorRepead"
         android:screenOrientation="portrait">
     </activity>
 
     <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.SkillGameModelPickerActivity"
+        android:name=".GameEngine.HeroQuizActivityNorRepead"
         android:screenOrientation="portrait">
     </activity>
 
     <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.HeroGameModePickerActivity"
+        android:name=".GameEngine.SkillQuizActivityDeathMatch"
         android:screenOrientation="portrait">
     </activity>
 
     <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.SkillQuizActivityNorRepead"
+        android:name=".GameEngine.HeroQuizActivityDeathMatch"
         android:screenOrientation="portrait">
     </activity>
 
     <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.HeroQuizActivityNorRepead"
+        android:name=".GameEngine.GameOverActivity"
         android:screenOrientation="portrait">
     </activity>
 
     <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.SkillQuizActivityDeathMatch"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.HeroQuizActivityDeathMatch"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.GameOverActivity"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.GameWinActivity"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.ScoreBoardActivity"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.TabActivitySkillDeathMatch"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.TabActivitySkillSingleRandom"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.TabActivityHeroDeathMatch"
-        android:screenOrientation="portrait">
-    </activity>
-
-    <activity android:label="@string/app_name"
-        android:name="com.lolgamequiz.my.TabActivityHeroSingleRandom"
+        android:name=".GameEngine.GameWinActivity"
         android:screenOrientation="portrait">
     </activity>
 

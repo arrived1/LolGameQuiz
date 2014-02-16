@@ -1,4 +1,4 @@
-package com.lolgamequiz.my.util;
+package com.lolgamequiz.my.Util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.DataBase;
 
 import java.util.Comparator;
 

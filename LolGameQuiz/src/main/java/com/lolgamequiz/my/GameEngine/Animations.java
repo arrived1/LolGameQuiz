@@ -1,8 +1,10 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 import android.content.Context;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
+import com.lolgamequiz.my.R;
 
 public class Animations {
     private Animation animFadein;

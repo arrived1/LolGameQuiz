@@ -1,4 +1,4 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,6 +13,12 @@ import java.util.Vector;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
+import com.lolgamequiz.my.DataBase.HeroBase;
+import com.lolgamequiz.my.DataBase.DataBaseRecord;
+import com.lolgamequiz.my.DataBase.DatabaseHandler;
+import com.lolgamequiz.my.DataBase.Hero;
+import com.lolgamequiz.my.DataBase.TABLE;
+import com.lolgamequiz.my.R;
 
 
 public class SkillQuizActivityDeathMatch extends Activity {
@@ -21,7 +27,7 @@ public class SkillQuizActivityDeathMatch extends Activity {
     private Timer timer;
     private Random rand = new Random();
 
-    private DataBase base = new DataBase();
+    private HeroBase base = new HeroBase();
     private Hero newHero;
     private Vector<ImageButton> answers = new Vector<ImageButton>();
 

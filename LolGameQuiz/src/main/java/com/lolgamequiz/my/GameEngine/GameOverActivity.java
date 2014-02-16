@@ -1,10 +1,14 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.lolgamequiz.my.DataBase.HeroBase;
+import com.lolgamequiz.my.DataBase.Hero;
+import com.lolgamequiz.my.R;
 
 
 public class GameOverActivity extends Activity {
@@ -23,7 +27,7 @@ public class GameOverActivity extends Activity {
         String timeTxt = extras.getString("TIME");
         String heroName = extras.getString("HERO");
 
-        DataBase base = new DataBase();
+        HeroBase base = new HeroBase();
         Hero hero = base.find(heroName);
 
         animations = new Animations(this);

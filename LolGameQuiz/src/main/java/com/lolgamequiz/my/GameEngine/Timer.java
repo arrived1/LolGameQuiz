@@ -1,8 +1,10 @@
-package com.lolgamequiz.my;
+package com.lolgamequiz.my.GameEngine;
 
 
 import android.app.Activity;
 import android.widget.Chronometer;
+
+import com.lolgamequiz.my.R;
 
 public class Timer {
     private Chronometer mChronometer;

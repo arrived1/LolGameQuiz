@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.lolgamequiz.my.GameEngine.Animations;
+import com.lolgamequiz.my.GameEngine.GameSounds;
+
 public class GameFragment extends Fragment {
     private Animations animations;
 
