@@ -1,1 +1,1 @@
-include ':LolGameQuiz'
+include ':LolGameQuiz', 'libs:google-play-services_lib'
