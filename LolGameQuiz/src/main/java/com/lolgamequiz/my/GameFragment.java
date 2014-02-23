@@ -56,7 +56,7 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     private boolean mSignInClicked;
 
-    private ConnectionResult mConnectionResult = new ConnectionResult();
+    private ConnectionResult mConnectionResult;
 
     private SignInButton btnSignIn;
     private Button btnSignOut, btnRevokeAccess;
@@ -103,7 +103,7 @@ public class GameFragment extends Fragment implements View.OnClickListener,
         btnSignOut.setOnClickListener(this);
         btnRevokeAccess.setOnClickListener(this);
 
-        mGoogleApiClient = new GoogleApiClient.Builder(context)
+        mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this).addApi(Plus.API, null)
                 .addScope(Plus.SCOPE_PLUS_LOGIN).build();
