@@ -1,7 +1,6 @@
 package com.lolgamequiz.my;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.graphics.Bitmap;
@@ -11,13 +10,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -30,6 +26,7 @@ import com.google.android.gms.plus.Plus;
 import com.google.android.gms.plus.model.people.Person;
 import com.lolgamequiz.my.GameEngine.Animations;
 import com.lolgamequiz.my.GameEngine.GameSounds;
+import com.lolgamequiz.my.GameEngine.SkillQuizActivityNorRepead;
 
 import java.io.InputStream;
 
@@ -40,7 +37,7 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     private static final int RC_SIGN_IN = 0;
     // Logcat tag
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "DUPA";
 
     // Profile pic image size in pixels
     private static final int PROFILE_PIC_SIZE = 400;
@@ -54,7 +51,7 @@ public class GameFragment extends Fragment implements View.OnClickListener,
     private ConnectionResult mConnectionResult;
 
     private SignInButton btnSignIn;
-
+    private Button btnSignOut, btnRevokeAccess;
     private Animations animations;
 
 
@@ -77,7 +74,12 @@ public class GameFragment extends Fragment implements View.OnClickListener,
         image.setAnimation(animations.getAnimFadein());
 
         btnSignIn = (SignInButton) rootView.findViewById(R.id.btn_sign_in);
+        btnSignOut = (Button) rootView.findViewById(R.id.btn_sign_out);
+        btnRevokeAccess = (Button) rootView.findViewById(R.id.btn_revoke_access);
+
         btnSignIn.setOnClickListener(this);
+        btnSignOut.setOnClickListener(this);
+        btnRevokeAccess.setOnClickListener(this);
 
         mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
                 .addConnectionCallbacks(this)
@@ -88,8 +90,8 @@ public class GameFragment extends Fragment implements View.OnClickListener,
     }
 
     public void onStart() {
-        super.onStart();
         mGoogleApiClient.connect();
+        super.onStart();
     }
 
     public void onStop() {
@@ -99,13 +101,16 @@ public class GameFragment extends Fragment implements View.OnClickListener,
         }
     }
 
-
     // Method to resolve any signin errors
     private void resolveSignInError() {
         if (mConnectionResult.hasResolution()) {
             try {
                 mIntentInProgress = true;
                 mConnectionResult.startResolutionForResult(getActivity(), RC_SIGN_IN);
+
+                btnSignIn.setVisibility(View.GONE);
+                getProfileInformation();
+
             } catch (IntentSender.SendIntentException e) {
                 mIntentInProgress = false;
                 mGoogleApiClient.connect();
@@ -115,22 +120,21 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     @Override
     public void onConnectionFailed(ConnectionResult result) {
-        if (!result.hasResolution()) {
-            GooglePlayServicesUtil.getErrorDialog(result.getErrorCode(), getActivity(), 0).show();
-            return;
-        }
+         if (!result.hasResolution()) {
+             GooglePlayServicesUtil.getErrorDialog(result.getErrorCode(), getActivity(), 0).show();
+             return;
+         }
 
-        if (!mIntentInProgress) {
-            // Store the ConnectionResult for later usage
-            mConnectionResult = result;
-
-            if (mSignInClicked) {
-                // The user has already clicked 'sign-in' so we attempt to
-                // resolve all
-                // errors until the user is signed in, or they cancel.
-                resolveSignInError();
-            }
-        }
+         if (!mIntentInProgress) {
+             // Store the ConnectionResult for later usage
+             mConnectionResult = result;
+             if (mSignInClicked) {
+                 // The user has already clicked 'sign-in' so we attempt to
+                 // resolve all
+                 // errors until the user is signed in, or they cancel.
+                 resolveSignInError();
+             }
+         }
 
     }
 
@@ -162,16 +166,17 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     }
 
-
     // Updating the UI, showing/hiding buttons and profile layout
     private void updateUI(boolean isSignedIn) {
         if (isSignedIn) {
             btnSignIn.setVisibility(View.GONE);
+            btnSignOut.setVisibility(View.VISIBLE);
+            btnRevokeAccess.setVisibility(View.VISIBLE);
         } else {
-            btnSignIn.setVisibility(View.VISIBLE);
+            btnSignOut.setVisibility(View.GONE);
+            btnRevokeAccess.setVisibility(View.GONE);
         }
     }
-
 
     // Fetching user's information name, email, profile pic
     private void getProfileInformation() {
@@ -210,17 +215,10 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     @Override
     public void onConnectionSuspended(int arg0) {
+        Log.e(TAG, "onConnectionSuspended()");
         mGoogleApiClient.connect();
         updateUI(false);
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.main, menu);
-//        return true;
-//    }
-
 
     // Button on click listener
     @Override
@@ -230,17 +228,16 @@ public class GameFragment extends Fragment implements View.OnClickListener,
                 // Signin button clicked
                 signInWithGplus();
                 break;
-//            case R.id.btn_sign_out:
-//                // Signout button clicked
-//                signOutFromGplus();
-//                break;
-//            case R.id.btn_revoke_access:
-//                // Revoke access button clicked
-//                revokeGplusAccess();
-//                break;
+            case R.id.btn_sign_out:
+                // Signout button clicked
+                signOutFromGplus();
+                break;
+            case R.id.btn_revoke_access:
+                // Revoke access button clicked
+                revokeGplusAccess();
+                break;
         }
     }
-
 
     // Sign-in into google
     private void signInWithGplus() {
@@ -249,7 +246,6 @@ public class GameFragment extends Fragment implements View.OnClickListener,
             resolveSignInError();
         }
     }
-
 
     // Sign-out from google
     private void signOutFromGplus() {
@@ -260,7 +256,6 @@ public class GameFragment extends Fragment implements View.OnClickListener,
             updateUI(false);
         }
     }
-
 
     // Revoking access from google
     private void revokeGplusAccess() {
@@ -278,7 +273,6 @@ public class GameFragment extends Fragment implements View.OnClickListener,
                     });
         }
     }
-
 
     // Background Async task to load user profile picture from url
     private class LoadProfileImage extends AsyncTask<String, Void, Bitmap> {
