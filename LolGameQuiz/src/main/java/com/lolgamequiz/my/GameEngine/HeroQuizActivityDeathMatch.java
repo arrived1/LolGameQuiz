@@ -10,11 +10,15 @@ import android.widget.LinearLayout;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.games.Games;
+import com.google.android.gms.plus.Plus;
 import com.lolgamequiz.my.DataBase.HeroBase;
 import com.lolgamequiz.my.DataBase.DataBaseRecord;
 import com.lolgamequiz.my.DataBase.DatabaseHandler;
 import com.lolgamequiz.my.DataBase.Hero;
 import com.lolgamequiz.my.DataBase.TABLE;
+import com.lolgamequiz.my.GameFragment;
 import com.lolgamequiz.my.R;
 
 import java.util.Random;
@@ -114,6 +118,10 @@ public class HeroQuizActivityDeathMatch extends Activity {
             score.addPoint();
             sounds.correct();
             sounds.correctNumber(score.getPoints());
+            if(score.getPoints() == 1) {
+                GoogleApiClient client = new GoogleApiClient.Builder(this).build();
+                Games.Achievements.increment(client, "CgkI_PXRrq4PEAIQAQ", 1);
+            }
             prepareQuestion();
         }
         else {

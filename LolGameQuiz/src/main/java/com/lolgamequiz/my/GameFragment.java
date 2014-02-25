@@ -37,12 +37,11 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     private static final int RC_SIGN_IN = 0;
     // Logcat tag
-    private static final String TAG = "DUPA";
 
     // Profile pic image size in pixels
     private static final int PROFILE_PIC_SIZE = 400;
     // Google client to interact with Google API
-    private GoogleApiClient mGoogleApiClient;
+    static public GoogleApiClient mGoogleApiClient;
 
     // A flag indicating that a PendingIntent is in progress and prevents us
     // from starting further intents.
@@ -53,7 +52,6 @@ public class GameFragment extends Fragment implements View.OnClickListener,
     private SignInButton btnSignIn;
     private Button btnSignOut, btnRevokeAccess;
     private Animations animations;
-
 
 
     public GameFragment(){}
@@ -188,7 +186,7 @@ public class GameFragment extends Fragment implements View.OnClickListener,
                 String personGooglePlusProfile = currentPerson.getUrl();
                 String email = Plus.AccountApi.getAccountName(mGoogleApiClient);
 
-                Log.e(TAG, "Name: " + personName + ", plusProfile: "
+                Log.e("DUPA", "Name: " + personName + ", plusProfile: "
                         + personGooglePlusProfile + ", email: " + email
                         + ", Image: " + personPhotoUrl);
 
@@ -215,7 +213,6 @@ public class GameFragment extends Fragment implements View.OnClickListener,
 
     @Override
     public void onConnectionSuspended(int arg0) {
-        Log.e(TAG, "onConnectionSuspended()");
         mGoogleApiClient.connect();
         updateUI(false);
     }
@@ -265,7 +262,7 @@ public class GameFragment extends Fragment implements View.OnClickListener,
                     .setResultCallback(new ResultCallback<Status>() {
                         @Override
                         public void onResult(Status arg0) {
-                            Log.e(TAG, "User access revoked!");
+                            Log.e("DUPA", "User access revoked!");
                             mGoogleApiClient.connect();
                             updateUI(false);
                         }
