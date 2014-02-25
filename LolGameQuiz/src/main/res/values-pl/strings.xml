@@ -29,4 +29,14 @@
     <string name="rateTxt1">Jeśli lubisz grę</string>
     <string name="rateTxt2"> poświęć chwilę i wystaw ocenę.\n\nDzięki za pomoc!</string>
 
+
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Hero quiz</item>
+        <item >Skill quiz</item>
+        <item >Wyniki</item>
+        <!--<item >Settings</item>-->
+        <!--<item >What\'s Hot</item>-->
+    </string-array>
+
 </resources>
