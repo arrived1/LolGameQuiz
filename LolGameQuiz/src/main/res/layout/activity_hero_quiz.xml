@@ -6,133 +6,140 @@
         android:layout_height="wrap_content"
         tools:context=".AboutProgramActivity" >
 
-    <!--<ScrollView-->
-            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="wrap_content" >-->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
-    <LinearLayout
-            android:id="@+id/statistics"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp" >
+            android:gravity="center|top"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/timeTxt"
+            <LinearLayout
+                    android:id="@+id/statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/timeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time" />
+
+                    <Chronometer android:id="@+id/time"
+                        android:format="@string/chronometer_initial_format"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/timeTxt"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:id="@+id/scoreTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:text="@string/points" />
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/scoreTxt"
+                        android:layout_marginLeft="5px"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/guessesLeftTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:text="@string/guesses_left" />
+
+                    <TextView
+                        android:id="@+id/guessesLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/guessesLeftTxt"
+                        android:layout_marginLeft="5px"
+                        android:textSize="40px" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/time" />
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/statistics"
+                android:layout_marginTop="10dp" />
 
-            <Chronometer android:id="@+id/time"
-                android:format="@string/chronometer_initial_format"
+            <LinearLayout
+                android:id="@+id/buttonRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/timeTxt"
-                android:layout_weight="0" />
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/pic"
+                android:layout_marginTop="10dp" >
 
-            <TextView
-                android:id="@+id/scoreTxt"
+
+                <ImageButton
+                    android:id="@+id/image0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <LinearLayout
+                android:id="@+id/buttonRow2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40px"
-                android:text="@string/points" />
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/buttonRow1"
+                android:layout_marginTop="5dp" >
 
-            <TextView
-                android:id="@+id/score"
+               <ImageButton
+                   android:id="@+id/image2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <LinearLayout
+                android:id="@+id/buttonRow3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/scoreTxt"
-                android:layout_marginLeft="5px"
-                android:textSize="40px" />
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/buttonRow2"
+                android:layout_marginTop="5dp" >
 
-            <TextView
-                android:id="@+id/guessesLeftTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40px"
-                android:text="@string/guesses_left" />
+                <ImageButton
+                    android:id="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/guessesLeft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/guessesLeftTxt"
-                android:layout_marginLeft="5px"
-                android:textSize="40px" />
+                <ImageButton
+                    android:id="@+id/image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/statistics"
-        android:layout_marginTop="10dp" />
-
-    <LinearLayout
-        android:id="@+id/buttonRow1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/pic"
-        android:layout_marginTop="10dp" >
-
-
-        <ImageButton
-            android:id="@+id/image0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <ImageButton
-            android:id="@+id/image1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-
-
-   </LinearLayout>
-
-   <LinearLayout
-        android:id="@+id/buttonRow2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/buttonRow1"
-        android:layout_marginTop="10dp" >
-
-       <ImageButton
-           android:id="@+id/image2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
-
-        <ImageButton
-            android:id="@+id/image3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-   </LinearLayout>
-
-   <LinearLayout
-        android:id="@+id/buttonRow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/buttonRow2"
-        android:layout_marginTop="10dp" >
-
-        <ImageButton
-            android:id="@+id/image4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <ImageButton
-            android:id="@+id/image5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-   </LinearLayout>
+           </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
