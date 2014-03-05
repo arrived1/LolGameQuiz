@@ -22,6 +22,7 @@ import com.lolgamequiz.my.R;
 
 
 public class SkillQuizActivityDeathMatch extends Activity {
+    private AdView adView;
     private GameSounds sounds;
     private Score score;
     private Timer timer;
@@ -58,12 +59,12 @@ public class SkillQuizActivityDeathMatch extends Activity {
     }
 
     private void addAdView() {
-        AdView ad = (AdView)findViewById(R.id.adView);
+        adView = (AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
 //                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
 //                .addTestDevice("TEST_DEVICE_ID")
                 .build();
-        ad.loadAd(adRequest);
+        adView.loadAd(adRequest);
     }
 
     private void prepareQuestion()
@@ -210,5 +211,31 @@ public class SkillQuizActivityDeathMatch extends Activity {
         answers.add(button3);
         answers.add(button4);
         answers.add(button5);
+    }
+
+     @Override
+    public void onResume() {
+        super.onResume();
+        if (adView != null) {
+            adView.resume();
+        }
+    }
+
+    @Override
+    public void onPause() {
+        if (adView != null) {
+            adView.pause();
+        }
+        super.onPause();
+    }
+
+    /** Called before the activity is destroyed. */
+    @Override
+    public void onDestroy() {
+        // Destroy the AdView.
+        if (adView != null) {
+            adView.destroy();
+        }
+        super.onDestroy();
     }
 }

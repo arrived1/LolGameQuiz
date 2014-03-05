@@ -12,11 +12,6 @@ repositories {
     mavenCentral()
 }
 
-//dependencies {
-//    compile 'com.android.support:support-v4:13.0.+'
-//    compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
-//}
-
 android {
     compileSdkVersion 19
     buildToolsVersion "19.0.0"
