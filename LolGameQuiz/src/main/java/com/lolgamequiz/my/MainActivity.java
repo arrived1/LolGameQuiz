@@ -61,7 +61,8 @@ public class MainActivity extends ActionBarActivity
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
-        //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
+//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "50+"));
 
 
@@ -138,10 +139,9 @@ public class MainActivity extends ActionBarActivity
             case 3:
                 fragment = new ScoreFragment();
                 break;
-//            case 4:
-//                fragment = new GameFragment();
-//                //fragment = new PagesFragment();
-//                break;
+            case 4:
+                fragment = new TwoPlayersReaction();
+                break;
 //            case 5:
 //                fragment = new GameFragment();
 //                //fragment = new WhatsHotFragment();
